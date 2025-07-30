@@ -50,26 +50,22 @@ Siga os passos abaixo para configurar e executar o Explorador de Arquivos em sua
 Pré-requisitos
 Certifique-se de ter o Node.js (que inclui o npm) instalado em seu sistema.
 
-Instalação
+##Instalação
+
 Clone o repositório:
 
-Bash
-
-git clone https://github.com/seu-usuario/nome-do-seu-repositorio.git
-cd nome-do-seu-repositorio
-(Substitua seu-usuario/nome-do-seu-repositorio.git pelo caminho real do seu repositório.)
+#git clone https://github.com/Brunno2m/Explorador_de_Arquivos.git
 
 Instale as dependências:
 
-Bash
+#npm install
 
-npm install
 Execução
+
 Após a instalação das dependências, você pode compilar o código TypeScript e iniciar o servidor de desenvolvimento:
 
-Bash
+#npm start
 
-npm start
 Isso compilará os arquivos TypeScript para a pasta dist/ e abrirá o projeto automaticamente no seu navegador, geralmente em http://127.0.0.1:8080 ou similar.
 
 💡 Estrutura de Dados (TypeScript)
