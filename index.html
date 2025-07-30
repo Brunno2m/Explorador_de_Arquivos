@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorador de Arquivos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Explorador de Arquivos</h1>
+
+        <div class="controls">
+            <input type="text" id="nodeNameInput" placeholder="Nome do arquivo/pasta">
+            <select id="nodeTypeSelect">
+                <option value="folder">Pasta</option>
+                <option value="file">Arquivo</option>
+            </select>
+            <button id="addNodeBtn">Criar</button>
+            <button id="removeNodeBtn" disabled>Remover Selecionado</button>
+        </div>
+
+        <div class="tree-display" id="treeDisplay">
+            </div>
+
+        <div class="path-display">
+            Caminho Absoluto: <span id="absolutePath"></span>
+        </div>
+    </div>
+
+    <script src="dist/file-manager.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,169 @@
+/* style.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 90%;
+    max-width: 800px;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 25px;
+}
+
+.controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.controls input[type="text"],
+.controls select {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    flex-grow: 1;
+    min-width: 150px;
+}
+
+.controls button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.controls button:hover {
+    background-color: #2980b9;
+}
+
+.controls button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.tree-display {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 15px;
+    min-height: 300px;
+    background-color: #fcfcfc;
+    overflow-x: auto;
+    margin-bottom: 20px;
+}
+
+.tree-node {
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.15s ease-in-out;
+    border-radius: 4px;
+    margin-left: 20px; /* Indentação para hierarquia */
+    position: relative; /* Para a linha de conexão */
+}
+
+.tree-node:hover {
+    background-color: #eaf6fd;
+}
+
+.tree-node.selected {
+    background-color: #d0efff;
+    border: 1px solid #aaddff;
+}
+
+.tree-node-icon {
+    margin-right: 8px;
+    font-size: 1.2em;
+    color: #666;
+    width: 20px; /* Garante que os ícones tenham largura consistente */
+    text-align: center;
+}
+
+.tree-node.folder .tree-node-icon::before {
+    content: '📁'; /* Ícone de pasta */
+}
+
+.tree-node.file .tree-node-icon::before {
+    content: '📄'; /* Ícone de arquivo */
+}
+
+.tree-node.selected .tree-node-icon {
+    color: #3498db;
+}
+
+.tree-node-name {
+    font-weight: 500;
+    color: #444;
+}
+
+.tree-node.selected .tree-node-name {
+    color: #2c3e50;
+}
+
+/* Linhas de conexão (opcional, mais avançado com SVG/canvas, mas podemos simular) */
+.tree-node:not(.root-node)::before {
+    content: '';
+    position: absolute;
+    left: -15px; /* Ajuste para alinhar com a indentação */
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #d0d0d0;
+    /* Linha vertical do pai */
+}
+
+.tree-node:not(.root-node)::after {
+    content: '';
+    position: absolute;
+    left: -15px;
+    top: 50%;
+    width: 15px; /* Linha horizontal até o nó */
+    height: 2px;
+    background-color: #d0d0d0;
+    transform: translateY(-50%);
+}
+
+.tree-node.root-node {
+    margin-left: 0; /* A raiz não tem indentação */
+}
+
+
+.path-display {
+    background-color: #e9eef2;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 0.9em;
+    color: #555;
+    border: 1px solid #dcdcdc;
+}
+
+#absolutePath {
+    font-weight: bold;
+    color: #007bff;
+    word-break: break-all; /* Quebra o texto se for muito longo */
+}

@@ -1,0 +1,17 @@
+{
+  "name": "explorador-arquivos",
+  "version": "1.0.0",
+  "description": "Um explorador de arquivos baseado em árvore com TS, HTML e CSS.",
+  "main": "dist/file-manager.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "tsc && live-server"
+  },
+  "keywords": [],
+  "author": "Seu Nome",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "typescript": "^5.0.0"
+  }
+}
