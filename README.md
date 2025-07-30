@@ -40,6 +40,8 @@ explorador-arquivos/
 ├── package.json            # Metadados do projeto e dependências
 ├── tsconfig.json           # Configurações do compilador TypeScript
 └── README.md               # Este arquivo!
+
+
 Nota: A pasta public/ é uma sugestão para organizar seus arquivos estáticos. Se você manteve index.html e style.css na raiz do projeto, ajuste os caminhos conforme necessário (por exemplo, em index.html a referência ao style.css seria style.css e não public/style.css).
 
 ⚙️ Como Rodar o Projeto
