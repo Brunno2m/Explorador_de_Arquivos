@@ -87,12 +87,6 @@ A lógica central está em `src/tree.ts`:
 
 ---
 
-## 🤝 Contribua
-
-Contribuições são bem-vindas!  
-Sugira melhorias, abra issues ou envie um Pull Request.
-
----
 
 
 
