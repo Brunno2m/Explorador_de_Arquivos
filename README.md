@@ -94,7 +94,5 @@ Sugira melhorias, abra issues ou envie um Pull Request.
 
 ---
 
-<div align="center">
-  Feito com 💙 por <a href="https://github.com/Brunno2m">Brunno2m</a>
-</div>
+
 
